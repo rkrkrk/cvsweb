@@ -1,0 +1,212 @@
+/* Move down content because we have a fixed navbar that is 3.5rem tall */
+body {
+    min-height: 75rem;
+    font-size: 14px;
+    background-color: #e9ecef;
+}
+
+.fixed-top {
+    top: 150px;
+}
+
+.container {
+    background-color: white;
+}
+
+.display-header {
+    height: 150px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+    display: flex;
+    background-color: white;
+    border-bottom: solid 10px purple;
+}
+
+.jumbotron {
+    padding-top: 188px;
+}
+
+.cvs3d-title-main {
+    font-size: 30px;
+    flex: 2;
+    text-align: left;
+}
+
+.cvs3d-title-right {
+    font-size: 20px;
+    flex: 1;
+    text-align: right;
+}
+
+.bg-dark {
+    background: #ff9900 !important;
+}
+
+.width-100 {
+    width: 100%;
+}
+
+.header-text {
+    font-size: 16px;
+    font-weight: bold;
+    text-align: left;
+    padding: 0;
+    margin: 0;
+    line-height: 1;
+    padding-top: 0;
+    display: inline;
+}
+
+.header-title {
+    font-size: 100px;
+    font-weight: bold;
+    line-height: 1;
+    margin: 0;
+}
+
+@media (min-width: 768px) {
+    .header-title {
+        font-size: 120px;
+        font-weight: bold;
+        line-height: 1.1;
+    }
+
+    .header-text {
+        font-size: 32px;
+        font-weight: bold;
+        text-align: right;
+        padding: 0;
+        margin: 0;
+        line-height: 1.1;
+        display: block;
+    }
+}
+
+.img-css {
+    width: 100%;
+    border: solid 2px purple;
+    margin: 4px;
+}
+
+.img-css-p {
+    width: 100%;
+    border: solid 2px purple;
+}
+
+.footer {
+    background-color: purple;
+    color: white;
+    text-align: center;
+    height: 2em;
+    margin-right: -15px;
+    margin-left: -15px;
+    padding-top: 0.25em;
+}
+
+.nav-custom {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 1.1;
+}
+
+.nav-wrapper {
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+
+li.nav-item.active {
+    background-color: grey;
+}
+
+h2 {
+    font-size: 140%;
+    color: #660066;
+    margin: 2em 0 0 0;
+    padding: 0;
+    font-weight: bold;
+    margin-bottom: 0.5em;
+}
+
+p {
+    line-height: 1.3;
+}
+
+.link {
+    color: #ff9900;
+}
+
+.link a {
+    color: #ff9900;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+.p-nav {}
+
+ul.menu {
+    margin: 0;
+    padding: 1px 0 0;
+    font-size: 1em;
+    list-style: none;
+    margin-top: 2em;
+    margin-bottom: 5em;
+}
+
+ul.menu li {
+    margin: 0 !important;
+    padding: 0 !important;
+    background: none !important;
+}
+
+ul.menu li a {
+    padding: 4px 0;
+    display: block;
+    color: #388333;
+    background: url(/web/20150802100007im_/http://cvs3d.com/templates/ja_purity/images/hdot2.gif) repeat-x bottom;
+    text-decoration: none;
+    outline: none;
+    border-bottom: solid 1px grey;
+}
+
+ul.menu li a span {
+    padding-left: 16px;
+    background: url(/web/20150802100007im_/http://cvs3d.com/templates/ja_purity/images/bullet.gif) no-repeat 5px 5px;
+    font-weight: bold;
+    color: #660066;
+}
+
+.gallery-row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.gallery-item {
+    flex: 0 0 50%;
+    padding: 4px;
+    /* align-items: center; */
+}
+
+@media (min-width: 768px) {
+    .gallery-item {
+        flex: 0 0 33%;
+        padding: 4px;
+        align-items: center;
+    }
+}
+
+@media (min-width: 96px) {
+    .gallery-item {
+        flex: 0 0 25%;
+        padding: 4px;
+        align-items: center;
+    }
+}
+
+
+.img-width {
+    /* width: 25%; */
+}
