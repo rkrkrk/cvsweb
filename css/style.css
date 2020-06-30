@@ -144,15 +144,24 @@ p {
     background-color: transparent;
 }
 
-.p-nav {}
-
 ul.menu {
     margin: 0;
     padding: 1px 0 0;
-    font-size: 1em;
+    font-size: 0.8em;
     list-style: none;
     margin-top: 2em;
     margin-bottom: 5em;
+}
+
+@media (min-width: 1240px) {
+    ul.menu {
+        margin: 0;
+        padding: 1px 0 0;
+        font-size: 1em;
+        list-style: none;
+        margin-top: 2em;
+        margin-bottom: 5em;
+    }
 }
 
 ul.menu li {
@@ -169,6 +178,9 @@ ul.menu li a {
     text-decoration: none;
     outline: none;
     border-bottom: solid 1px grey;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
 }
 
 ul.menu li a span {
@@ -187,6 +199,7 @@ ul.menu li a span {
 .gallery-item {
     flex: 0 0 50%;
     padding: 4px;
+
     /* align-items: center; */
 }
 
@@ -198,7 +211,7 @@ ul.menu li a span {
     }
 }
 
-@media (min-width: 96px) {
+@media (min-width: 960px) {
     .gallery-item {
         flex: 0 0 25%;
         padding: 4px;
@@ -206,7 +219,3 @@ ul.menu li a span {
     }
 }
 
-
-.img-width {
-    /* width: 25%; */
-}
